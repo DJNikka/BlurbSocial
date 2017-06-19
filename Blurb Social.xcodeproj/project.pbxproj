@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		4B59B1C47BB565481DB17C77 /* Pods_Blurb_Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C2C9304432454F7E032D9C3 /* Pods_Blurb_Social.framework */; };
 		63FFCD061EF8813E00F4B780 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FFCD051EF8813E00F4B780 /* AppDelegate.swift */; };
-		63FFCD081EF8813E00F4B780 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FFCD071EF8813E00F4B780 /* ViewController.swift */; };
+		63FFCD081EF8813E00F4B780 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FFCD071EF8813E00F4B780 /* SignInVC.swift */; };
 		63FFCD0B1EF8813E00F4B780 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63FFCD091EF8813E00F4B780 /* Main.storyboard */; };
 		63FFCD0D1EF8813E00F4B780 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63FFCD0C1EF8813E00F4B780 /* Assets.xcassets */; };
 		63FFCD101EF8813E00F4B780 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63FFCD0E1EF8813E00F4B780 /* LaunchScreen.storyboard */; };
@@ -20,7 +20,7 @@
 		1E2DA6F13C0DF022EEF85F68 /* Pods-Blurb Social.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Blurb Social.release.xcconfig"; path = "Pods/Target Support Files/Pods-Blurb Social/Pods-Blurb Social.release.xcconfig"; sourceTree = "<group>"; };
 		63FFCD021EF8813E00F4B780 /* Blurb Social.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Blurb Social.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		63FFCD051EF8813E00F4B780 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		63FFCD071EF8813E00F4B780 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		63FFCD071EF8813E00F4B780 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		63FFCD0A1EF8813E00F4B780 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		63FFCD0C1EF8813E00F4B780 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		63FFCD0F1EF8813E00F4B780 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -50,6 +50,28 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		63F7D54D1EF886F300BECF0B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				63FFCD071EF8813E00F4B780 /* SignInVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		63F7D54E1EF886FF00BECF0B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		63F7D54F1EF8870900BECF0B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		63FFCCF91EF8813D00F4B780 = {
 			isa = PBXGroup;
 			children = (
@@ -71,8 +93,10 @@
 		63FFCD041EF8813E00F4B780 /* Blurb Social */ = {
 			isa = PBXGroup;
 			children = (
+				63F7D54F1EF8870900BECF0B /* Model */,
+				63F7D54E1EF886FF00BECF0B /* View */,
+				63F7D54D1EF886F300BECF0B /* Controller */,
 				63FFCD051EF8813E00F4B780 /* AppDelegate.swift */,
-				63FFCD071EF8813E00F4B780 /* ViewController.swift */,
 				63FFCD091EF8813E00F4B780 /* Main.storyboard */,
 				63FFCD0C1EF8813E00F4B780 /* Assets.xcassets */,
 				63FFCD0E1EF8813E00F4B780 /* LaunchScreen.storyboard */,
@@ -216,7 +240,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				63FFCD081EF8813E00F4B780 /* ViewController.swift in Sources */,
+				63FFCD081EF8813E00F4B780 /* SignInVC.swift in Sources */,
 				63FFCD061EF8813E00F4B780 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
