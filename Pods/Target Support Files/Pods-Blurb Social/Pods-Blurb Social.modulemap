@@ -1,0 +1,6 @@
+framework module Pods_Blurb_Social {
+  umbrella header "Pods-Blurb Social-umbrella.h"
+
+  export *
+  module * { export * }
+}

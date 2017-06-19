@@ -7,14 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B59B1C47BB565481DB17C77 /* Pods_Blurb_Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C2C9304432454F7E032D9C3 /* Pods_Blurb_Social.framework */; };
 		63FFCD061EF8813E00F4B780 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FFCD051EF8813E00F4B780 /* AppDelegate.swift */; };
 		63FFCD081EF8813E00F4B780 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FFCD071EF8813E00F4B780 /* ViewController.swift */; };
 		63FFCD0B1EF8813E00F4B780 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63FFCD091EF8813E00F4B780 /* Main.storyboard */; };
 		63FFCD0D1EF8813E00F4B780 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63FFCD0C1EF8813E00F4B780 /* Assets.xcassets */; };
 		63FFCD101EF8813E00F4B780 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63FFCD0E1EF8813E00F4B780 /* LaunchScreen.storyboard */; };
+		63FFCD181EF8842C00F4B780 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 63FFCD171EF8842C00F4B780 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1E2DA6F13C0DF022EEF85F68 /* Pods-Blurb Social.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Blurb Social.release.xcconfig"; path = "Pods/Target Support Files/Pods-Blurb Social/Pods-Blurb Social.release.xcconfig"; sourceTree = "<group>"; };
 		63FFCD021EF8813E00F4B780 /* Blurb Social.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Blurb Social.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		63FFCD051EF8813E00F4B780 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63FFCD071EF8813E00F4B780 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,9 @@
 		63FFCD0C1EF8813E00F4B780 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		63FFCD0F1EF8813E00F4B780 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		63FFCD111EF8813E00F4B780 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63FFCD171EF8842C00F4B780 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8C2C9304432454F7E032D9C3 /* Pods_Blurb_Social.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Blurb_Social.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E00C2CAC303206F3F18C03F9 /* Pods-Blurb Social.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Blurb Social.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Blurb Social/Pods-Blurb Social.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B59B1C47BB565481DB17C77 /* Pods_Blurb_Social.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5AD91C505549D9D2AC6B65D3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8C2C9304432454F7E032D9C3 /* Pods_Blurb_Social.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		63FFCCF91EF8813D00F4B780 = {
 			isa = PBXGroup;
 			children = (
 				63FFCD041EF8813E00F4B780 /* Blurb Social */,
 				63FFCD031EF8813E00F4B780 /* Products */,
+				8DE3719BA0EE8A6306B684E9 /* Pods */,
+				5AD91C505549D9D2AC6B65D3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +77,18 @@
 				63FFCD0C1EF8813E00F4B780 /* Assets.xcassets */,
 				63FFCD0E1EF8813E00F4B780 /* LaunchScreen.storyboard */,
 				63FFCD111EF8813E00F4B780 /* Info.plist */,
+				63FFCD171EF8842C00F4B780 /* GoogleService-Info.plist */,
 			);
 			path = "Blurb Social";
+			sourceTree = "<group>";
+		};
+		8DE3719BA0EE8A6306B684E9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E00C2CAC303206F3F18C03F9 /* Pods-Blurb Social.debug.xcconfig */,
+				1E2DA6F13C0DF022EEF85F68 /* Pods-Blurb Social.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 63FFCD141EF8813E00F4B780 /* Build configuration list for PBXNativeTarget "Blurb Social" */;
 			buildPhases = (
+				8B4AF8E6D8ADC62EC8729A3E /* [CP] Check Pods Manifest.lock */,
 				63FFCCFE1EF8813E00F4B780 /* Sources */,
 				63FFCCFF1EF8813E00F4B780 /* Frameworks */,
 				63FFCD001EF8813E00F4B780 /* Resources */,
+				1EE396BD847CFE52C0FCD74A /* [CP] Embed Pods Frameworks */,
+				5D856326632D461007DB820B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -126,11 +156,60 @@
 			files = (
 				63FFCD101EF8813E00F4B780 /* LaunchScreen.storyboard in Resources */,
 				63FFCD0D1EF8813E00F4B780 /* Assets.xcassets in Resources */,
+				63FFCD181EF8842C00F4B780 /* GoogleService-Info.plist in Resources */,
 				63FFCD0B1EF8813E00F4B780 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1EE396BD847CFE52C0FCD74A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Blurb Social/Pods-Blurb Social-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5D856326632D461007DB820B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Blurb Social/Pods-Blurb Social-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8B4AF8E6D8ADC62EC8729A3E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		63FFCCFE1EF8813E00F4B780 /* Sources */ = {
@@ -259,6 +338,7 @@
 		};
 		63FFCD151EF8813E00F4B780 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E00C2CAC303206F3F18C03F9 /* Pods-Blurb Social.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = D8ZBA7RCZR;
@@ -272,6 +352,7 @@
 		};
 		63FFCD161EF8813E00F4B780 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E2DA6F13C0DF022EEF85F68 /* Pods-Blurb Social.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = D8ZBA7RCZR;
@@ -302,6 +383,7 @@
 				63FFCD161EF8813E00F4B780 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
