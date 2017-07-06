@@ -12,6 +12,7 @@ target 'Blurb Social' do
   pod 'Firebase/Storage'
   pod 'FBSDKLoginKit'
   pod 'FBSDKCoreKit'
+  pod 'SwiftKeychainWrapper'
 
 
 end
