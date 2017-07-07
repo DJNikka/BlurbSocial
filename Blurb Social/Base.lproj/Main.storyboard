@@ -145,12 +145,27 @@
                     <view key="view" contentMode="scaleToFill" id="zXz-Rj-xcg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eok-dx-D2f">
+                                <rect key="frame" x="157.5" y="319" width="60" height="30"/>
+                                <state key="normal" title="Sign Out">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="signOutTapped:" destination="9c5-vG-QXl" eventType="touchUpInside" id="RVf-tK-tSc"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="0.0079937530680000007" green="0.46695482729999999" blue="0.74230903390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="eok-dx-D2f" firstAttribute="centerY" secondItem="zXz-Rj-xcg" secondAttribute="centerY" id="DcZ-zp-SjY"/>
+                            <constraint firstItem="eok-dx-D2f" firstAttribute="centerX" secondItem="zXz-Rj-xcg" secondAttribute="centerX" id="ajZ-fP-nHK"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MiY-x3-86P" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="874" y="91"/>
+            <point key="canvasLocation" x="872.79999999999995" y="90.404797601199405"/>
         </scene>
     </scenes>
     <resources>
