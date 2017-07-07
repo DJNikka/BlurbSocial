@@ -12,7 +12,7 @@ target 'Blurb Social' do
   pod 'Firebase/Storage'
   pod 'FBSDKLoginKit'
   pod 'FBSDKCoreKit'
-  pod 'SwiftKeychainWrapper'
+  pod 'SwiftKeychainWrapper', :git => 'https://github.com/jrendel/SwiftKeychainWrapper.git', :branch => 'master'
 
 
 end

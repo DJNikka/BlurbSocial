@@ -19,6 +19,9 @@ class SignInVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        if let _ = KeychainWrapper.standard.string(forKey: KEY_UID) {
+            performSegue(withIdentifier: "goToFeed", sender: nil)
+        }
         
         
     }
@@ -98,6 +101,7 @@ class SignInVC: UIViewController {
             
             let keychainResult = KeychainWrapper.standard.set(id, forKey: KEY_UID)
             print("NIKKA: Data saved to keychain \(keychainResult)")
+            performSegue(withIdentifier: "goToFeed", sender: nil)
         }
         
         
