@@ -106,7 +106,7 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.97592383620000001" green="0.97666221860000002" blue="0.97603815790000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="6AA-Yn-PO9" secondAttribute="bottom" id="3li-zJ-C5m"/>
                             <constraint firstItem="lq7-zB-fYu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="25" id="FaN-03-1gW"/>
@@ -146,30 +146,95 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eok-dx-D2f">
-                                <rect key="frame" x="157.5" y="319" width="60" height="30"/>
-                                <state key="normal" title="Sign Out">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="signOutTapped:" destination="9c5-vG-QXl" eventType="touchUpInside" id="RVf-tK-tSc"/>
-                                </connections>
-                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fm4-XL-JA0" customClass="FancyView" customModule="Blurb_Social" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="90"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eok-dx-D2f">
+                                        <rect key="frame" x="20" y="27.5" width="40" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="0Bl-em-QqQ"/>
+                                            <constraint firstAttribute="height" constant="35" id="Uwu-ee-QOW"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="sign-out">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="signOutTapped:" destination="9c5-vG-QXl" eventType="touchUpInside" id="RVf-tK-tSc"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Feed" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jA5-mM-Zti">
+                                        <rect key="frame" x="146" y="23.5" width="83.5" height="43"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="36"/>
+                                        <color key="textColor" red="0.97592383620000001" green="0.97666221860000002" blue="0.97603815790000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0079937530680000007" green="0.46695482729999999" blue="0.74230903390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="jA5-mM-Zti" firstAttribute="centerY" secondItem="fm4-XL-JA0" secondAttribute="centerY" id="Hyr-74-1E6"/>
+                                    <constraint firstItem="eok-dx-D2f" firstAttribute="leading" secondItem="fm4-XL-JA0" secondAttribute="leading" constant="20" id="ZjS-LN-c7L"/>
+                                    <constraint firstAttribute="height" constant="90" id="aFX-2x-jLY"/>
+                                    <constraint firstItem="eok-dx-D2f" firstAttribute="centerY" secondItem="jA5-mM-Zti" secondAttribute="centerY" id="eAA-Sa-TH0"/>
+                                    <constraint firstItem="jA5-mM-Zti" firstAttribute="centerX" secondItem="fm4-XL-JA0" secondAttribute="centerX" id="qbA-0L-JGo"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8bP-hh-YG6" customClass="FancyView" customModule="Blurb_Social" customModuleProvider="target">
+                                <rect key="frame" x="8" y="98" width="359" height="65"/>
+                                <color key="backgroundColor" red="0.45602951400000002" green="0.79672369509999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="kWl-w0-Ngx"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="266" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="iE2-HW-ySC">
+                                <rect key="frame" x="0.0" y="190" width="375" height="477"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="266" id="zza-6i-DsF">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="266"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zza-6i-DsF" id="dLq-nH-hcF">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="265.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CTc-r2-0Z6" customClass="FancyView" customModule="Blurb_Social" customModuleProvider="target">
+                                                    <rect key="frame" x="8" y="8" width="359" height="249.5"/>
+                                                    <color key="backgroundColor" white="0.66666666666666663" alpha="0.2148972602739726" colorSpace="calibratedWhite"/>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="CTc-r2-0Z6" secondAttribute="trailing" constant="8" id="4AO-o8-QFm"/>
+                                                <constraint firstItem="CTc-r2-0Z6" firstAttribute="leading" secondItem="dLq-nH-hcF" secondAttribute="leading" constant="8" id="6LA-tL-eBu"/>
+                                                <constraint firstItem="CTc-r2-0Z6" firstAttribute="top" secondItem="dLq-nH-hcF" secondAttribute="top" constant="8" id="HVb-Ie-Fu0"/>
+                                                <constraint firstAttribute="bottom" secondItem="CTc-r2-0Z6" secondAttribute="bottom" constant="8" id="cc6-ju-YHT"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
-                        <color key="backgroundColor" red="0.0079937530680000007" green="0.46695482729999999" blue="0.74230903390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.97592383620000001" green="0.97666221860000002" blue="0.97603815790000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="eok-dx-D2f" firstAttribute="centerY" secondItem="zXz-Rj-xcg" secondAttribute="centerY" id="DcZ-zp-SjY"/>
-                            <constraint firstItem="eok-dx-D2f" firstAttribute="centerX" secondItem="zXz-Rj-xcg" secondAttribute="centerX" id="ajZ-fP-nHK"/>
+                            <constraint firstItem="CJB-UA-tra" firstAttribute="top" secondItem="iE2-HW-ySC" secondAttribute="bottom" id="25p-cm-GeV"/>
+                            <constraint firstItem="8bP-hh-YG6" firstAttribute="leading" secondItem="zXz-Rj-xcg" secondAttribute="leading" constant="8" id="6py-up-glG"/>
+                            <constraint firstItem="8bP-hh-YG6" firstAttribute="top" secondItem="fm4-XL-JA0" secondAttribute="bottom" constant="8" id="Iaq-8H-qUD"/>
+                            <constraint firstAttribute="trailing" secondItem="fm4-XL-JA0" secondAttribute="trailing" id="KVA-Y8-dcC"/>
+                            <constraint firstAttribute="trailing" secondItem="iE2-HW-ySC" secondAttribute="trailing" id="PrI-0O-GPX"/>
+                            <constraint firstItem="iE2-HW-ySC" firstAttribute="leading" secondItem="zXz-Rj-xcg" secondAttribute="leading" id="Yfq-nY-lPS"/>
+                            <constraint firstItem="fm4-XL-JA0" firstAttribute="top" secondItem="zXz-Rj-xcg" secondAttribute="top" id="aEO-45-e9Z"/>
+                            <constraint firstItem="fm4-XL-JA0" firstAttribute="leading" secondItem="zXz-Rj-xcg" secondAttribute="leading" id="pPF-83-YSn"/>
+                            <constraint firstItem="iE2-HW-ySC" firstAttribute="top" secondItem="8bP-hh-YG6" secondAttribute="bottom" constant="27" id="u8U-eG-SJ2"/>
+                            <constraint firstAttribute="trailing" secondItem="8bP-hh-YG6" secondAttribute="trailing" constant="8" id="x1R-bg-OAN"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MiY-x3-86P" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="872.79999999999995" y="90.404797601199405"/>
+            <point key="canvasLocation" x="888.79999999999995" y="116.49175412293854"/>
         </scene>
     </scenes>
     <resources>
         <image name="Everipedia_logo.svg-2" width="600" height="600"/>
         <image name="f" width="352" height="328"/>
+        <image name="sign-out" width="92" height="65"/>
     </resources>
 </document>
