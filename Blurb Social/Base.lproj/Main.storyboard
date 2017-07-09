@@ -224,8 +224,40 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KIo-NK-Dv7">
-                                                    <rect key="frame" x="8" y="8" width="304" height="229"/>
+                                                    <rect key="frame" x="8" y="8" width="359" height="229"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="glq-FQ-Msz">
+                                                            <rect key="frame" x="8" y="8.5" width="343" height="65"/>
+                                                            <subviews>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="e6v-T6-rp2">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="65" height="65"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="65" id="N0V-so-otl"/>
+                                                                        <constraint firstAttribute="width" constant="65" id="gac-Jd-AO9"/>
+                                                                    </constraints>
+                                                                </imageView>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j2M-wT-pEt">
+                                                                    <rect key="frame" x="65" y="18" width="213" height="29.5"/>
+                                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="empty-heart" translatesAutoresizingMaskIntoConstraints="NO" id="tcK-9j-MDk">
+                                                                    <rect key="frame" x="278" y="0.0" width="65" height="65"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="65" id="MLE-oF-fi7"/>
+                                                                        <constraint firstAttribute="width" constant="65" id="xNa-Id-U04"/>
+                                                                    </constraints>
+                                                                </imageView>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
                                                     <color key="backgroundColor" red="0.45602951400000002" green="0.79672369509999996" blue="1" alpha="0.26214683219178081" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstItem="glq-FQ-Msz" firstAttribute="top" secondItem="KIo-NK-Dv7" secondAttribute="top" constant="8" id="44k-x1-JXf"/>
+                                                        <constraint firstItem="glq-FQ-Msz" firstAttribute="leading" secondItem="KIo-NK-Dv7" secondAttribute="leading" constant="8" id="gvc-n7-kqZ"/>
+                                                        <constraint firstAttribute="trailing" secondItem="glq-FQ-Msz" secondAttribute="trailing" constant="8" id="hHi-YW-EFH"/>
+                                                    </constraints>
                                                 </view>
                                             </subviews>
                                             <constraints>
@@ -263,7 +295,9 @@
         <image name="Everipedia_logo.svg-2" width="600" height="600"/>
         <image name="add-image" width="88" height="88"/>
         <image name="add-post" width="88" height="88"/>
+        <image name="empty-heart" width="70" height="70"/>
         <image name="f" width="352" height="328"/>
+        <image name="profile" width="113" height="155"/>
         <image name="sign-out" width="92" height="65"/>
     </resources>
 </document>
