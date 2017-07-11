@@ -15,15 +15,12 @@ class FeedVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
 
-    
     @IBAction func signOutTapped(_ sender: Any) {
         let keychainResult = KeychainWrapper.standard.removeObject(forKey: KEY_UID)
         print("NIKKA: ID removed from keychain \(keychainResult)")
         dismiss(animated: true, completion: nil)
     }
-  
 
 }

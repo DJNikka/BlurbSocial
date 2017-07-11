@@ -224,7 +224,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KIo-NK-Dv7">
-                                                    <rect key="frame" x="8" y="8" width="398" height="302.66666666666669"/>
+                                                    <rect key="frame" x="8" y="8" width="398" height="303"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="glq-FQ-Msz">
                                                             <rect key="frame" x="8" y="8.6666666666666714" width="382" height="65"/>
@@ -272,7 +272,7 @@
                                                             </subviews>
                                                         </stackView>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jLc-g6-TxX">
-                                                            <rect key="frame" x="8" y="81" width="382" height="189"/>
+                                                            <rect key="frame" x="8" y="82" width="382" height="189"/>
                                                         </imageView>
                                                     </subviews>
                                                     <color key="backgroundColor" red="0.45602951400000002" green="0.79672369509999996" blue="1" alpha="0.26214683219178081" colorSpace="custom" customColorSpace="sRGB"/>
@@ -317,7 +317,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MiY-x3-86P" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="884" y="113.79310344827587"/>
+            <point key="canvasLocation" x="878.26086956521749" y="110.86956521739131"/>
         </scene>
     </scenes>
     <resources>
