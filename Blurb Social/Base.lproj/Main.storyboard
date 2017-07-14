@@ -215,6 +215,8 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="404" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="iE2-HW-ySC">
                                 <rect key="frame" x="0.0" y="179" width="414" height="557"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="separatorColor" red="0.19215686269999999" green="0.3294117647" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="sectionIndexBackgroundColor" red="0.9206323891" green="0.92974756120000002" blue="0.92974756120000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostCell" rowHeight="404" id="zza-6i-DsF" customClass="PostCell" customModule="Blurb_Social" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="404"/>
@@ -236,7 +238,7 @@
                                                                         <constraint firstAttribute="width" constant="65" id="gac-Jd-AO9"/>
                                                                     </constraints>
                                                                 </imageView>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j2M-wT-pEt">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="npiterman" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j2M-wT-pEt">
                                                                     <rect key="frame" x="65" y="17.999999999999996" width="252" height="29.333333333333332"/>
                                                                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
                                                                     <nil key="textColor"/>
@@ -288,7 +290,7 @@
                                                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                         </textView>
                                                     </subviews>
-                                                    <color key="backgroundColor" red="0.45602951400000002" green="0.79672369509999996" blue="1" alpha="0.26214683219178081" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="backgroundColor" red="0.9206323891" green="0.92974756120000002" blue="0.92974756120000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
                                                         <constraint firstItem="eLK-OB-vIv" firstAttribute="leading" secondItem="KIo-NK-Dv7" secondAttribute="leading" constant="8" id="7fj-Zh-IyR"/>
                                                         <constraint firstAttribute="trailing" secondItem="eLK-OB-vIv" secondAttribute="trailing" constant="8" id="HB2-q1-4M3"/>
@@ -322,7 +324,7 @@
                                 </prototypes>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" red="0.97592383620000001" green="0.97666221860000002" blue="0.97603815790000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.92063238907057832" green="0.9297475612395939" blue="0.9297475612395939" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="fm4-XL-JA0" secondAttribute="trailing" id="Fcu-nJ-nL4"/>
                             <constraint firstItem="CJB-UA-tra" firstAttribute="top" secondItem="iE2-HW-ySC" secondAttribute="bottom" id="KRu-uq-qwD"/>
