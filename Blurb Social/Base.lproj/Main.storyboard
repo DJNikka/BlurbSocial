@@ -240,7 +240,7 @@
                                                         <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="glq-FQ-Msz">
                                                             <rect key="frame" x="8" y="8.6666666666666714" width="382" height="65"/>
                                                             <subviews>
-                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="e6v-T6-rp2" customClass="CircleView" customModule="Blurb_Social" customModuleProvider="target">
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nikka" translatesAutoresizingMaskIntoConstraints="NO" id="e6v-T6-rp2" customClass="CircleView" customModule="Blurb_Social" customModuleProvider="target">
                                                                     <rect key="frame" x="0.0" y="0.0" width="65" height="65"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="65" id="N0V-so-otl"/>
@@ -369,7 +369,6 @@
         <image name="empty-heart" width="70" height="70"/>
         <image name="f" width="352" height="328"/>
         <image name="nikka" width="922" height="912"/>
-        <image name="profile" width="113" height="155"/>
         <image name="sign-out" width="92" height="65"/>
     </resources>
 </document>
