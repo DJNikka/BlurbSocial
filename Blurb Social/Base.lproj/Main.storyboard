@@ -179,12 +179,16 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="mke-qn-Mlh">
                                         <rect key="frame" x="8" y="10.666666666666671" width="382" height="43.999999999999986"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add-image" translatesAutoresizingMaskIntoConstraints="NO" id="XE7-Jt-MpE">
+                                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add-image" translatesAutoresizingMaskIntoConstraints="NO" id="XE7-Jt-MpE">
                                                 <rect key="frame" x="0.0" y="0.0" width="44" height="43.999999999999986"/>
+                                                <gestureRecognizers/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="44" id="KSG-xE-rLU"/>
                                                     <constraint firstAttribute="height" constant="44" id="XMO-GQ-ypp"/>
                                                 </constraints>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="Vv8-Rx-IRs" appends="YES" id="cF6-Ab-Kgy"/>
+                                                </connections>
                                             </imageView>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Add a caption" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cCQ-ib-3PL">
                                                 <rect key="frame" x="54" y="0.0" width="274" height="43.999999999999986"/>
@@ -339,10 +343,16 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="imageAdd" destination="XE7-Jt-MpE" id="gbb-AN-bVM"/>
                         <outlet property="tableView" destination="iE2-HW-ySC" id="9Mb-yJ-WWi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MiY-x3-86P" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Vv8-Rx-IRs">
+                    <connections>
+                        <action selector="addImageTapped:" destination="9c5-vG-QXl" id="Suo-Kk-gOi"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="878.26086956521749" y="110.86956521739131"/>
         </scene>

@@ -15,6 +15,7 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
     
     @IBOutlet weak var tableView: UITableView!
     
+    @IBOutlet weak var imageAdd: UIImageView!
     var posts = [Post]()
     var imagePicker: UIImagePickerController!
 
@@ -23,6 +24,10 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
         
         tableView.delegate = self
         tableView.dataSource = self
+        
+        imagePicker = UIImagePickerController()
+        imagePicker.allowsEditing = true
+        imagePicker.delegate = self
         
         DataService.ds.REF_POSTS.observe(.value, with: {(snapshot) in
             
@@ -69,15 +74,33 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
         
     }
     
-    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+    private func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
+        if let image = info[UIImagePickerControllerEditedImage] as? UIImage {
+                imageAdd.image = image
+            
+        } else {
+            print("NIKKA: A valid image wasn't selected")
+        }
+        
         imagePicker.dismiss(animated: true, completion: nil)
     }
     
+    
+    @IBAction func addImageTapped(_ sender: Any) {
+                present(imagePicker, animated: true, completion: nil)
+        
+     
+    }
 
+    
+    
     @IBAction func signOutTapped(_ sender: Any) {
         let keychainResult = KeychainWrapper.standard.removeObject(forKey: KEY_UID)
         print("NIKKA: ID removed from keychain \(keychainResult)")
         dismiss(animated: true, completion: nil)
     }
 
+    
+    
+  
 }
