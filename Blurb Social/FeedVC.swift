@@ -47,6 +47,9 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
             }
             self.tableView.reloadData()
             
+            
+            //Pulling posts from firebase and adding them to a table view
+            
         })
 
     }
@@ -58,6 +61,8 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         return posts.count
+        
+        //Will eventually have to be limited in order to save space/data with a "Refresh Load" 
         
     }
     
@@ -71,6 +76,8 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
         } else {
             return PostCell()
         }
+     
+        //Saves memory by not loading all cells at once, only as needede
         
     }
     
@@ -83,16 +90,17 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
         }
         
         imagePicker.dismiss(animated: true, completion: nil)
+        
+        //1. If it is the first time user is selecting photos, prompts permission request
+        //2. Choose photo to upload
+        //3. Dismiss the photo boxes
     }
-    
     
     @IBAction func addImageTapped(_ sender: Any) {
                 present(imagePicker, animated: true, completion: nil)
         
      
     }
-
-    
     
     @IBAction func signOutTapped(_ sender: Any) {
         let keychainResult = KeychainWrapper.standard.removeObject(forKey: KEY_UID)
@@ -101,6 +109,4 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
     }
 
     
-    
-  
-}
+  }

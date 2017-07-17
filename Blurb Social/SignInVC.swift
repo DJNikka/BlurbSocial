@@ -38,7 +38,6 @@ class SignInVC: UIViewController, UITextFieldDelegate {
         //if return button is pressed, keyboard dismissed
     }
     
-
     override func viewDidAppear(_ animated: Bool) {
         if let _ = KeychainWrapper.standard.string(forKey: KEY_UID) {
             print("NIKKA: ID found in keychain")
@@ -46,7 +45,6 @@ class SignInVC: UIViewController, UITextFieldDelegate {
         }
         
     }
-    
     
     @IBAction func facebookBtnTapped(_ sender: Any) {
         
@@ -82,9 +80,7 @@ class SignInVC: UIViewController, UITextFieldDelegate {
     
                 }
             }
-        
-        
-            
+           
         })
     }
 
@@ -129,10 +125,6 @@ class SignInVC: UIViewController, UITextFieldDelegate {
             performSegue(withIdentifier: "goToFeed", sender: nil)
         }
     
-
-    
-    
-        
-        
+  
 }
 
