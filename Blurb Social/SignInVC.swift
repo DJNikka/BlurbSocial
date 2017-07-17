@@ -12,14 +12,32 @@ import FBSDKLoginKit
 import Firebase
 import SwiftKeychainWrapper
 
-class SignInVC: UIViewController {
+class SignInVC: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var emailField: FancyField!
-
     @IBOutlet weak var pwdField: FancyField!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+     
+        self.emailField.delegate = self
+        self.pwdField.delegate = self
+        
+    
         
     }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        emailField.resignFirstResponder()
+        pwdField.resignFirstResponder()
+        return (true)
+    }
+    
+    
 
     override func viewDidAppear(_ animated: Bool) {
         if let _ = KeychainWrapper.standard.string(forKey: KEY_UID) {
@@ -110,6 +128,10 @@ class SignInVC: UIViewController {
             print("NIKKA: Data saved to keychain \(keychainResult)")
             performSegue(withIdentifier: "goToFeed", sender: nil)
         }
+    
+
+    
+    
         
         
 }

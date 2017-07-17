@@ -11,11 +11,12 @@ import Firebase
 import SwiftKeychainWrapper
 
 
-class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     @IBOutlet weak var tableView: UITableView!
     
     var posts = [Post]()
+    var imagePicker: UIImagePickerController!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,7 +38,7 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
                         self.posts.append(post)
                     }
                 }
-                
+
             }
             self.tableView.reloadData()
             
@@ -67,6 +68,11 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         }
         
     }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        imagePicker.dismiss(animated: true, completion: nil)
+    }
+    
 
     @IBAction func signOutTapped(_ sender: Any) {
         let keychainResult = KeychainWrapper.standard.removeObject(forKey: KEY_UID)
