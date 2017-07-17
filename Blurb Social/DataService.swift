@@ -10,6 +10,7 @@ import Foundation
 import Firebase
 
 let DB_BASE = Database.database().reference()
+let STORAGE_BASE = FIRStorage.storage().reference()
 
 class DataService {
     
