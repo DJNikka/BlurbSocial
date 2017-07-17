@@ -149,9 +149,12 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fm4-XL-JA0" customClass="FancyView" customModule="Blurb_Social" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="90"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eok-dx-D2f">
-                                        <rect key="frame" x="20" y="27.5" width="40" height="35"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eok-dx-D2f">
+                                        <rect key="frame" x="20" y="25" width="40" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="GXb-1V-atj"/>
+                                            <constraint firstAttribute="width" constant="40" id="tTH-sm-dpt"/>
+                                        </constraints>
                                         <state key="normal" backgroundImage="sign-out">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
@@ -169,8 +172,10 @@
                                 <color key="backgroundColor" red="0.0079937530680000007" green="0.46695482729999999" blue="0.74230903390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="90" id="Q4m-uN-TyG"/>
+                                    <constraint firstItem="eok-dx-D2f" firstAttribute="leading" secondItem="fm4-XL-JA0" secondAttribute="leading" constant="20" id="f83-TJ-c6o"/>
                                     <constraint firstItem="jA5-mM-Zti" firstAttribute="centerY" secondItem="fm4-XL-JA0" secondAttribute="centerY" id="jWR-m4-yQh"/>
                                     <constraint firstItem="jA5-mM-Zti" firstAttribute="centerX" secondItem="fm4-XL-JA0" secondAttribute="centerX" id="qXb-Va-S8Y"/>
+                                    <constraint firstAttribute="bottom" secondItem="eok-dx-D2f" secondAttribute="bottom" constant="30" id="zxd-jH-gaN"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8bP-hh-YG6" customClass="FancyView" customModule="Blurb_Social" customModuleProvider="target">
@@ -235,7 +240,7 @@
                                                         <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="glq-FQ-Msz">
                                                             <rect key="frame" x="8" y="8.6666666666666714" width="382" height="65"/>
                                                             <subviews>
-                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="e6v-T6-rp2">
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="e6v-T6-rp2" customClass="CircleView" customModule="Blurb_Social" customModuleProvider="target">
                                                                     <rect key="frame" x="0.0" y="0.0" width="65" height="65"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="65" id="N0V-so-otl"/>

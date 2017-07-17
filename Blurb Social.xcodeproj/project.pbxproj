@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		4B59B1C47BB565481DB17C77 /* Pods_Blurb_Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C2C9304432454F7E032D9C3 /* Pods_Blurb_Social.framework */; };
 		635735E51F0DC83C0083FD4F /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635735E41F0DC83C0083FD4F /* FeedVC.swift */; };
+		63D40AD11F1CC60100D9EEBC /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D40AD01F1CC60100D9EEBC /* CircleView.swift */; };
 		63E3A3541F1739E700FA801B /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E3A3531F1739E700FA801B /* PostCell.swift */; };
 		63E3A3571F18391600FA801B /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E3A3561F18391600FA801B /* DataService.swift */; };
 		63E3A3591F19435C00FA801B /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E3A3581F19435C00FA801B /* Post.swift */; };
@@ -28,6 +29,7 @@
 /* Begin PBXFileReference section */
 		1E2DA6F13C0DF022EEF85F68 /* Pods-Blurb Social.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Blurb Social.release.xcconfig"; path = "Pods/Target Support Files/Pods-Blurb Social/Pods-Blurb Social.release.xcconfig"; sourceTree = "<group>"; };
 		635735E41F0DC83C0083FD4F /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
+		63D40AD01F1CC60100D9EEBC /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 		63E3A3531F1739E700FA801B /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		63E3A3561F18391600FA801B /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		63E3A3581F19435C00FA801B /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 				63F7D5591EF8B35100BECF0B /* FancyField.swift */,
 				63F7D55B1EF8B49200BECF0B /* FancyBtn.swift */,
 				63E3A3531F1739E700FA801B /* PostCell.swift */,
+				63D40AD01F1CC60100D9EEBC /* CircleView.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -283,6 +286,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63D40AD11F1CC60100D9EEBC /* CircleView.swift in Sources */,
 				63F7D55A1EF8B35100BECF0B /* FancyField.swift in Sources */,
 				63E3A3591F19435C00FA801B /* Post.swift in Sources */,
 				63FFCD081EF8813E00F4B780 /* SignInVC.swift in Sources */,
