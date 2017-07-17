@@ -16,27 +16,27 @@ class SignInVC: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var emailField: FancyField!
     @IBOutlet weak var pwdField: FancyField!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
      
         self.emailField.delegate = self
         self.pwdField.delegate = self
         
-    
-        
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
+        
+        //if the touching outside of the keyboard begins, dismisses keyboard
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         emailField.resignFirstResponder()
         pwdField.resignFirstResponder()
         return (true)
+        
+        //if return button is pressed, keyboard dismissed
     }
-    
     
 
     override func viewDidAppear(_ animated: Bool) {
