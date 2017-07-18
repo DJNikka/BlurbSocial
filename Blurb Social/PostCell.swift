@@ -34,6 +34,7 @@ class PostCell: UITableViewCell {
                        
             let ref = Storage.storage().reference(forURL: post.imageUrl)
             
+                
                 ref.data(withMaxSize: 2 * 1024 * 1024, completion: { (data, error) in
                     if error != nil {
                         print("NIKKA: Unable to download image from Firebase storage")
@@ -45,6 +46,7 @@ class PostCell: UITableViewCell {
                                 FeedVC.imageCache.setObject(img, forKey: post.imageUrl)
                                 
                                 //downloading images and saving them to cache
+                                //FIRStorage deprecated to Storage
                             }
                         }
                     }
