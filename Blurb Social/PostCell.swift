@@ -33,7 +33,6 @@ class PostCell: UITableViewCell {
             self.postImg.image = img
         } else {
             
-            
             let ref = Storage.storage().reference(forURL: post.imageUrl)
             ref.getData(maxSize: 2 * 1024 * 1024, completion: { (data, error) in
                     if error != nil {
