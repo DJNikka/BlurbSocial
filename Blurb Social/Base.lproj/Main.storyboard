@@ -351,6 +351,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="captionField" destination="cCQ-ib-3PL" id="xYK-wZ-HQX"/>
                         <outlet property="imageAdd" destination="XE7-Jt-MpE" id="gbb-AN-bVM"/>
                         <outlet property="tableView" destination="iE2-HW-ySC" id="9Mb-yJ-WWi"/>
                     </connections>
