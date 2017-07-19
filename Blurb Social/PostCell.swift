@@ -19,6 +19,7 @@ class PostCell: UITableViewCell {
     @IBOutlet weak var likeImg: UIImageView!
     
     var post: Post!
+    let likesRef = DataService.ds.REF_USER_CURRENT.child("likes")
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -59,8 +60,7 @@ class PostCell: UITableViewCell {
                 })
         }
         
-        let likesRef = DataService.ds.REF_USER_CURRENT.child("likes")
-        likesRef.observeSingleEvent(of: .value, with:  {(snapshot) in
+                likesRef.observeSingleEvent(of: .value, with:  {(snapshot) in
             if let _ = snapshot.value as? NSNull {
                 self.likeImg.image = UIImage(named: "empty-heart")
             
@@ -71,6 +71,17 @@ class PostCell: UITableViewCell {
         })
         
         func likeTapped(sender: UITapGestureRecognizer) {
+            
+            
+            likesRef.observeSingleEvent(of: .value, with:  {(snapshot) in
+                if let _ = snapshot.value as? NSNull {
+                    self.likeImg.image = UIImage(named: "filled-heart")
+                    
+                } else {
+                    self.likeImg.image = UIImage(named: "empty-heart")
+                }
+                
+            })
             
         }
     
