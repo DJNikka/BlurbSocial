@@ -76,9 +76,13 @@ class PostCell: UITableViewCell {
             likesRef.observeSingleEvent(of: .value, with:  {(snapshot) in
                 if let _ = snapshot.value as? NSNull {
                     self.likeImg.image = UIImage(named: "filled-heart")
+                    self.post.adjustLikes(addLike: true)
+                    self.likesRef.setValue(true)
                     
                 } else {
                     self.likeImg.image = UIImage(named: "empty-heart")
+                    self.post.adjustLikes(addLike: false)
+                    self.likesRef.removeValue()
                 }
                 
             })
