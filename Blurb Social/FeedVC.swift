@@ -113,6 +113,8 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
         
      
     }
+    @IBAction func postBtnTapped(_ sender: Any) {
+    }
     
     @IBAction func signOutTapped(_ sender: Any) {
         let keychainResult = KeychainWrapper.standard.removeObject(forKey: KEY_UID)
