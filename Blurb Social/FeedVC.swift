@@ -18,6 +18,7 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
     //CircleView! instead of UIImageView! if circular button desired
    
     @IBOutlet weak var captionField: UITextField!
+
     
     var posts = [Post]()
     var imagePicker: UIImagePickerController!
