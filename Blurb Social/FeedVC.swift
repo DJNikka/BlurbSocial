@@ -16,11 +16,15 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var imageAdd: UIImageView!
     //CircleView! instead of UIImageView! if circular button desired
+   
     @IBOutlet weak var captionField: UITextField!
     
     var posts = [Post]()
     var imagePicker: UIImagePickerController!
     static var imageCache: NSCache<NSString, UIImage> = NSCache()
+    
+    var imageSelected = false
+    //by default, no images are selected
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -97,6 +101,9 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
         if let image = info[UIImagePickerControllerEditedImage] as? UIImage {
                 imageAdd.image = image
+                imageSelected = true
+            
+            //if image is picked, changes variable imageSelected to true
             
         } else {
             print("NIKKA: A valid image wasn't selected")
@@ -120,7 +127,7 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
             print("NIKKA: Caption must be entered")
             return
         }
-        guard let img = imageAdd.image else {
+        guard let img = imageAdd.image, imageSelected == true else {
             print("NIKKA: An image must be selected")
             return
         }
