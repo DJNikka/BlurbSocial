@@ -11,7 +11,7 @@ import Firebase
 import SwiftKeychainWrapper
 
 
-class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate {
     
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var imageAdd: UIImageView!
@@ -31,6 +31,7 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
         
         tableView.delegate = self
         tableView.dataSource = self
+        self.captionField.delegate = self
         
         imagePicker = UIImagePickerController()
         imagePicker.allowsEditing = true
@@ -59,6 +60,22 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
         })
 
     }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        captionField.resignFirstResponder()
+        return (true)
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+        
+        //if the touching outside of the keyboard begins, dismisses keyboard
+    }
+    
+  
+    
+
+    
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -123,6 +140,12 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
     }
     @IBAction func postBtnTapped(_ sender: Any) {
         
+        func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+            captionField.resignFirstResponder()
+            return (true)
+        }
+        
+        
         guard let caption = captionField.text, caption != "" else {
             print("NIKKA: Caption must be entered")
             return
@@ -144,12 +167,37 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
                 } else {
                     print ("NIKKA: Successfully uploaded image to Firebase storage")
                     let downloadURL = metadata?.downloadURL()?.absoluteString
-                    
-                }
+                    if let url = downloadURL {
+                        self.postToFirebase(imgUrl: url)
+                    }
+                    }
             
             }
         
+        }
+    
+    
+        
     }
+    
+
+    
+    func postToFirebase(imgUrl: String) {
+        let post: Dictionary<String, AnyObject> = [
+        "caption": captionField.text! as AnyObject,
+        "imageUrl": imgUrl as AnyObject,
+        "likes": 0 as AnyObject
+            
+            ]
+        
+        let firebasePost = DataService.ds.REF_POSTS.childByAutoId()
+        firebasePost.setValue(post)
+        
+        captionField.text = ""
+        imageSelected = false
+        imageAdd.image = UIImage(named: "add-image")
+        
+        tableView.reloadData()
     }
     
     @IBAction func signOutTapped(_ sender: Any) {
