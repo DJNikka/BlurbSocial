@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina5_5" orientation="portrait">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -19,14 +19,14 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vqn-00-YeP" customClass="FancyView" customModule="Blurb_Social" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="150"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Everipedia_logo.svg-2" translatesAutoresizingMaskIntoConstraints="NO" id="4gT-Wj-YDB">
-                                        <rect key="frame" x="152" y="20.666666666666664" width="110" height="110"/>
+                                        <rect key="frame" x="132.5" y="20.5" width="110" height="110"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="110" id="A7c-zS-0xb"/>
                                             <constraint firstAttribute="width" constant="110" id="YVK-wL-5w5"/>
@@ -41,13 +41,13 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose a sign-in method" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e80-oE-r6W">
-                                <rect key="frame" x="8" y="170" width="398" height="23.333333333333343"/>
+                                <rect key="frame" x="8" y="170" width="359" height="23.5"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.86863227739726023" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kST-Q4-Fcn" customClass="RoundBtn" customModule="Blurb_Social" customModuleProvider="target">
-                                <rect key="frame" x="142" y="213.33333333333331" width="130" height="129.99999999999994"/>
+                                <rect key="frame" x="122.5" y="213.5" width="130" height="130"/>
                                 <color key="backgroundColor" red="0.28252881765365601" green="0.40290221571922302" blue="0.66587537527084351" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="130" id="Hl0-Eu-WXD"/>
@@ -59,22 +59,22 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="lq7-zB-fYu">
-                                <rect key="frame" x="45" y="368.33333333333331" width="324" height="124"/>
+                                <rect key="frame" x="41" y="368.5" width="293" height="124"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="m4X-2m-vI0" customClass="FancyField" customModule="Blurb_Social" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="324" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="293" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Oj9-ye-H9Y" customClass="FancyField" customModule="Blurb_Social" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="45" width="324" height="30"/>
+                                        <rect key="frame" x="0.0" y="45" width="293" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YOr-QH-lOm" customClass="FancyBtn" customModule="Blurb_Social" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="90" width="324" height="34"/>
+                                        <rect key="frame" x="0.0" y="90" width="293" height="34"/>
                                         <color key="backgroundColor" red="0.28626990110836703" green="0.75178775823631605" blue="0.87577331852791884" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="16"/>
                                         <color key="tintColor" red="1" green="1" blue="1" alpha="0.79561750856164382" colorSpace="custom" customColorSpace="sRGB"/>
@@ -86,10 +86,10 @@
                                 </subviews>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6AA-Yn-PO9" customClass="FancyView" customModule="Blurb_Social" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="661" width="414" height="75"/>
+                                <rect key="frame" x="0.0" y="592" width="375" height="75"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="If you have not signed in before, an account will automatically be created" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mR7-bO-4LN">
-                                        <rect key="frame" x="8" y="8" width="398" height="59"/>
+                                        <rect key="frame" x="8" y="8" width="359" height="59"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="0.70063677226027399" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -143,11 +143,11 @@
                         <viewControllerLayoutGuide type="bottom" id="CJB-UA-tra"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="zXz-Rj-xcg">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fm4-XL-JA0" customClass="FancyView" customModule="Blurb_Social" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="90"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="90"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eok-dx-D2f">
                                         <rect key="frame" x="20" y="25" width="40" height="35"/>
@@ -163,7 +163,7 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Feed" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jA5-mM-Zti">
-                                        <rect key="frame" x="165.33333333333337" y="23.666666666666671" width="83.666666666666657" height="43"/>
+                                        <rect key="frame" x="146" y="23.5" width="83.5" height="43"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="36"/>
                                         <color key="textColor" red="0.97592383620000001" green="0.97666221860000002" blue="0.97603815790000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -179,13 +179,13 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8bP-hh-YG6" customClass="FancyView" customModule="Blurb_Social" customModuleProvider="target">
-                                <rect key="frame" x="8" y="98" width="398" height="65"/>
+                                <rect key="frame" x="8" y="98" width="359" height="65"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="mke-qn-Mlh">
-                                        <rect key="frame" x="8" y="10.666666666666671" width="382" height="43.999999999999986"/>
+                                        <rect key="frame" x="8" y="10.5" width="343" height="44"/>
                                         <subviews>
                                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add-image" translatesAutoresizingMaskIntoConstraints="NO" id="XE7-Jt-MpE">
-                                                <rect key="frame" x="0.0" y="0.0" width="44" height="43.999999999999986"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
                                                 <gestureRecognizers/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="44" id="KSG-xE-rLU"/>
@@ -196,13 +196,13 @@
                                                 </connections>
                                             </imageView>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Add a caption" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cCQ-ib-3PL">
-                                                <rect key="frame" x="54" y="0.0" width="274" height="43.999999999999986"/>
+                                                <rect key="frame" x="54" y="0.0" width="235" height="44"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bwm-m8-tsC">
-                                                <rect key="frame" x="338" y="0.0" width="44" height="43.999999999999986"/>
+                                                <rect key="frame" x="299" y="0.0" width="44" height="44"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="44" id="KCS-lx-Rhi"/>
                                                     <constraint firstAttribute="width" constant="44" id="yJ6-on-Wtg"/>
@@ -224,24 +224,24 @@
                                     <constraint firstAttribute="height" constant="65" id="ssG-ve-aze"/>
                                 </constraints>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="404" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="iE2-HW-ySC">
-                                <rect key="frame" x="0.0" y="179" width="414" height="557"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="508" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="iE2-HW-ySC">
+                                <rect key="frame" x="0.0" y="179" width="375" height="488"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="separatorColor" red="0.19215686269999999" green="0.3294117647" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="sectionIndexBackgroundColor" red="0.97588268730715644" green="0.98554489213197971" blue="0.98554489213197971" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostCell" rowHeight="404" id="zza-6i-DsF" customClass="PostCell" customModule="Blurb_Social" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="404"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostCell" rowHeight="508" id="zza-6i-DsF" customClass="PostCell" customModule="Blurb_Social" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="508"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zza-6i-DsF" id="dLq-nH-hcF">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="404"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="508"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KIo-NK-Dv7">
-                                                    <rect key="frame" x="8" y="8" width="398" height="388"/>
+                                                    <rect key="frame" x="8" y="8" width="304" height="492"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="glq-FQ-Msz">
-                                                            <rect key="frame" x="8" y="8.6666666666666714" width="382" height="65"/>
+                                                            <rect key="frame" x="8" y="8.5" width="288" height="65"/>
                                                             <subviews>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nikka" translatesAutoresizingMaskIntoConstraints="NO" id="e6v-T6-rp2" customClass="CircleView" customModule="Blurb_Social" customModuleProvider="target">
                                                                     <rect key="frame" x="0.0" y="0.0" width="65" height="65"/>
@@ -251,13 +251,13 @@
                                                                     </constraints>
                                                                 </imageView>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="npiterman" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j2M-wT-pEt">
-                                                                    <rect key="frame" x="65" y="17.999999999999996" width="252" height="29.333333333333332"/>
+                                                                    <rect key="frame" x="65" y="18" width="158" height="29.5"/>
                                                                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="empty-heart" translatesAutoresizingMaskIntoConstraints="NO" id="tcK-9j-MDk">
-                                                                    <rect key="frame" x="317" y="0.0" width="65" height="65"/>
+                                                                    <rect key="frame" x="223" y="0.0" width="65" height="65"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="65" id="MLE-oF-fi7"/>
                                                                         <constraint firstAttribute="width" constant="65" id="xNa-Id-U04"/>
@@ -269,7 +269,7 @@
                                                             </constraints>
                                                         </stackView>
                                                         <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="1ig-O9-pFi">
-                                                            <rect key="frame" x="307" y="359.66666666666669" width="83" height="20"/>
+                                                            <rect key="frame" x="213" y="464" width="83" height="20"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Likes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qz6-aP-O3J">
                                                                     <rect key="frame" x="0.0" y="0.0" width="40" height="20"/>
@@ -286,13 +286,13 @@
                                                             </subviews>
                                                         </stackView>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jLc-g6-TxX">
-                                                            <rect key="frame" x="8" y="82" width="382" height="200"/>
+                                                            <rect key="frame" x="8" y="82" width="288" height="300"/>
                                                             <constraints>
-                                                                <constraint firstAttribute="height" constant="200" id="rPP-NL-iTU"/>
+                                                                <constraint firstAttribute="height" constant="300" id="rPP-NL-iTU"/>
                                                             </constraints>
                                                         </imageView>
-                                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="eLK-OB-vIv">
-                                                            <rect key="frame" x="8" y="290" width="382" height="63"/>
+                                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="eLK-OB-vIv">
+                                                            <rect key="frame" x="8" y="390" width="288" height="63"/>
                                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="63" id="2sC-d7-0Wr"/>

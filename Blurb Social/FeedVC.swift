@@ -54,6 +54,7 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
                 }
 
             }
+            self.posts.reverse()
             self.tableView.reloadData()
                         
             //Pulling posts from firebase and adding them to a table view
