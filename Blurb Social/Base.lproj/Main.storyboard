@@ -285,7 +285,7 @@
                                                                 </label>
                                                             </subviews>
                                                         </stackView>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nikka" translatesAutoresizingMaskIntoConstraints="NO" id="jLc-g6-TxX">
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jLc-g6-TxX">
                                                             <rect key="frame" x="8" y="82" width="382" height="200"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="200" id="rPP-NL-iTU"/>
@@ -302,7 +302,7 @@
                                                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                         </textView>
                                                     </subviews>
-                                                    <color key="backgroundColor" red="0.9206323891" green="0.92974756120000002" blue="0.92974756120000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="backgroundColor" red="0.89571591644271931" green="0.90458439086294418" blue="0.90458439086294418" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
                                                         <constraint firstItem="eLK-OB-vIv" firstAttribute="leading" secondItem="KIo-NK-Dv7" secondAttribute="leading" constant="8" id="7fj-Zh-IyR"/>
                                                         <constraint firstAttribute="trailing" secondItem="eLK-OB-vIv" secondAttribute="trailing" constant="8" id="HB2-q1-4M3"/>
@@ -325,6 +325,7 @@
                                                 <constraint firstAttribute="trailing" secondItem="KIo-NK-Dv7" secondAttribute="trailing" constant="8" id="iSB-0B-4ZI"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <connections>
                                             <outlet property="caption" destination="eLK-OB-vIv" id="QFb-XA-RbC"/>
                                             <outlet property="likeImg" destination="tcK-9j-MDk" id="GXW-Ln-Jwp"/>

@@ -19,11 +19,13 @@ class PostCell: UITableViewCell {
     @IBOutlet weak var likeImg: UIImageView!
     
     var post: Post!
-    let likesRef = DataService.ds.REF_USER_CURRENT.child("likes")
+    var likesRef: DatabaseReference!
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        
+   
         
         let tap = UITapGestureRecognizer(target: self, action: #selector(likeTapped))
         tap.numberOfTapsRequired = 1
@@ -34,6 +36,7 @@ class PostCell: UITableViewCell {
 
     func configureCell(post: Post, img: UIImage? = nil) {
         self.post = post
+        likesRef = DataService.ds.REF_USER_CURRENT.child("likes").child(post.postKey)
         self.caption.text = post.caption
         self.likesLbl.text = "\(post.likes)"
         
@@ -69,7 +72,8 @@ class PostCell: UITableViewCell {
             }
             
         })
-        
+    }
+    
         func likeTapped(sender: UITapGestureRecognizer) {
             
             
@@ -90,5 +94,5 @@ class PostCell: UITableViewCell {
         }
     
     }
-}
+
 
