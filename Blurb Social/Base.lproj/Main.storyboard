@@ -224,7 +224,7 @@
                                     <constraint firstAttribute="height" constant="65" id="ssG-ve-aze"/>
                                 </constraints>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="508" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="iE2-HW-ySC">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="508" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="iE2-HW-ySC">
                                 <rect key="frame" x="0.0" y="179" width="375" height="488"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="separatorColor" red="0.19215686269999999" green="0.3294117647" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
@@ -238,10 +238,10 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KIo-NK-Dv7">
-                                                    <rect key="frame" x="8" y="8" width="304" height="492"/>
+                                                    <rect key="frame" x="8" y="8" width="359" height="492"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="glq-FQ-Msz">
-                                                            <rect key="frame" x="8" y="8.5" width="288" height="65"/>
+                                                            <rect key="frame" x="8" y="8.5" width="343" height="65"/>
                                                             <subviews>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nikka" translatesAutoresizingMaskIntoConstraints="NO" id="e6v-T6-rp2" customClass="CircleView" customModule="Blurb_Social" customModuleProvider="target">
                                                                     <rect key="frame" x="0.0" y="0.0" width="65" height="65"/>
@@ -251,13 +251,13 @@
                                                                     </constraints>
                                                                 </imageView>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="npiterman" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j2M-wT-pEt">
-                                                                    <rect key="frame" x="65" y="18" width="158" height="29.5"/>
+                                                                    <rect key="frame" x="65" y="18" width="213" height="29.5"/>
                                                                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="empty-heart" translatesAutoresizingMaskIntoConstraints="NO" id="tcK-9j-MDk">
-                                                                    <rect key="frame" x="223" y="0.0" width="65" height="65"/>
+                                                                    <rect key="frame" x="278" y="0.0" width="65" height="65"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="65" id="MLE-oF-fi7"/>
                                                                         <constraint firstAttribute="width" constant="65" id="xNa-Id-U04"/>
@@ -269,7 +269,7 @@
                                                             </constraints>
                                                         </stackView>
                                                         <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="1ig-O9-pFi">
-                                                            <rect key="frame" x="213" y="464" width="83" height="20"/>
+                                                            <rect key="frame" x="268" y="464" width="83" height="20"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Likes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qz6-aP-O3J">
                                                                     <rect key="frame" x="0.0" y="0.0" width="40" height="20"/>
@@ -286,13 +286,13 @@
                                                             </subviews>
                                                         </stackView>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jLc-g6-TxX">
-                                                            <rect key="frame" x="8" y="82" width="288" height="300"/>
+                                                            <rect key="frame" x="8" y="82" width="343" height="300"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="300" id="rPP-NL-iTU"/>
                                                             </constraints>
                                                         </imageView>
-                                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="eLK-OB-vIv">
-                                                            <rect key="frame" x="8" y="390" width="288" height="63"/>
+                                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eLK-OB-vIv">
+                                                            <rect key="frame" x="8" y="390" width="343" height="63"/>
                                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="63" id="2sC-d7-0Wr"/>
