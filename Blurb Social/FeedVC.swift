@@ -150,10 +150,12 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
             captionField.resignFirstResponder()
             return (true)
         }
-        
-        
+                
         guard let caption = captionField.text, caption != "" else {
             print("NIKKA: Caption must be entered")
+            let alert = UIAlertController(title: "Caption Required", message: "Say something funny!", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+            present(alert, animated: true, completion:nil)
             return
         }
         guard let img = imageAdd.image, imageSelected == true else {

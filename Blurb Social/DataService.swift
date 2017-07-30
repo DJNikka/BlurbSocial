@@ -22,7 +22,6 @@ class DataService {
     private var _REF_POSTS = DB_BASE.child("posts")
     private var _REF_USERS = DB_BASE.child("users")
     
-    
     //Storage references
     private var _REF_POST_IMAGES = STORAGE_BASE.child("Models")
     
@@ -39,8 +38,10 @@ class DataService {
     
     var REF_USERS: DatabaseReference {
         return _REF_USERS
-        
-        
+       
+    }
+    var REF_POST_IMAGES: StorageReference {
+        return _REF_POST_IMAGES
     }
     
     var REF_USER_CURRENT: DatabaseReference {
@@ -49,22 +50,9 @@ class DataService {
         return user
     }
 
-    var REF_POST_IMAGES: StorageReference {
-        return _REF_POST_IMAGES
-    }
-    
-
-    
-    
-    
-    
-    
     func createFirbaseDBUser(uid: String, userData: Dictionary<String, String>) {
         REF_USERS.child(uid).updateChildValues(userData)
-        
-        
+       
     }
-    
-    
-    
+ 
 }
