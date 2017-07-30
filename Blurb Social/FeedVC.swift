@@ -162,6 +162,9 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
             alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
             present(alert, animated: true, completion:nil)
             return
+            
+            //if no caption entered, alert user
+            
         }
         guard let img = imageAdd.image, imageSelected == true else {
             print("NIKKA: An image must be selected")
@@ -169,6 +172,8 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
             alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
             present(alert, animated: true, completion:nil)
             return
+            
+            //if no image selected, alert user
         }
         if let imgData = UIImageJPEGRepresentation(img, 0.2) {
             
