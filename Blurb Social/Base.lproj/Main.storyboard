@@ -14,7 +14,6 @@
         </array>
         <array key="HelveticaNeue.ttc">
             <string>HelveticaNeue</string>
-            <string>HelveticaNeue-Medium</string>
         </array>
     </customFonts>
     <scenes>
@@ -155,13 +154,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fm4-XL-JA0" customClass="FancyView" customModule="Blurb_Social" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="90"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eok-dx-D2f">
-                                        <rect key="frame" x="20" y="25" width="40" height="35"/>
+                                        <rect key="frame" x="20" y="22.5" width="26" height="20"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="35" id="GXb-1V-atj"/>
-                                            <constraint firstAttribute="width" constant="40" id="tTH-sm-dpt"/>
+                                            <constraint firstAttribute="width" constant="26" id="qSq-pk-q5m"/>
+                                            <constraint firstAttribute="height" constant="20" id="v0I-gQ-PkE"/>
                                         </constraints>
                                         <state key="normal" backgroundImage="sign-out">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -170,24 +169,16 @@
                                             <action selector="signOutTapped:" destination="9c5-vG-QXl" eventType="touchUpInside" id="RVf-tK-tSc"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Feed" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jA5-mM-Zti">
-                                        <rect key="frame" x="146" y="23.5" width="83.5" height="43"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="36"/>
-                                        <color key="textColor" red="0.97592383620000001" green="0.97666221860000002" blue="0.97603815790000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" red="0.0079937530680000007" green="0.46695482729999999" blue="0.74230903390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="90" id="Q4m-uN-TyG"/>
-                                    <constraint firstItem="eok-dx-D2f" firstAttribute="leading" secondItem="fm4-XL-JA0" secondAttribute="leading" constant="20" id="f83-TJ-c6o"/>
-                                    <constraint firstItem="jA5-mM-Zti" firstAttribute="centerY" secondItem="fm4-XL-JA0" secondAttribute="centerY" id="jWR-m4-yQh"/>
-                                    <constraint firstItem="jA5-mM-Zti" firstAttribute="centerX" secondItem="fm4-XL-JA0" secondAttribute="centerX" id="qXb-Va-S8Y"/>
-                                    <constraint firstAttribute="bottom" secondItem="eok-dx-D2f" secondAttribute="bottom" constant="30" id="zxd-jH-gaN"/>
+                                    <constraint firstAttribute="height" constant="65" id="Q4m-uN-TyG"/>
+                                    <constraint firstItem="eok-dx-D2f" firstAttribute="centerY" secondItem="fm4-XL-JA0" secondAttribute="centerY" id="STU-b8-E2G"/>
+                                    <constraint firstItem="eok-dx-D2f" firstAttribute="leading" secondItem="fm4-XL-JA0" secondAttribute="leading" constant="20" id="WDQ-CB-KEx"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8bP-hh-YG6" customClass="FancyView" customModule="Blurb_Social" customModuleProvider="target">
-                                <rect key="frame" x="8" y="98" width="359" height="65"/>
+                                <rect key="frame" x="8" y="73" width="359" height="65"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="mke-qn-Mlh">
                                         <rect key="frame" x="8" y="10.5" width="343" height="44"/>
@@ -233,7 +224,7 @@
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="508" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="iE2-HW-ySC">
-                                <rect key="frame" x="0.0" y="179" width="375" height="488"/>
+                                <rect key="frame" x="0.0" y="154" width="375" height="513"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="separatorColor" red="0.19215686269999999" green="0.3294117647" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="sectionIndexBackgroundColor" red="0.97588268730715644" green="0.98554489213197971" blue="0.98554489213197971" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -272,6 +263,7 @@
                                                                     </constraints>
                                                                 </imageView>
                                                             </subviews>
+                                                            <gestureRecognizers/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="65" id="bUr-aO-dIk"/>
                                                             </constraints>
@@ -326,11 +318,9 @@
                                                         <constraint firstItem="jLc-g6-TxX" firstAttribute="top" secondItem="glq-FQ-Msz" secondAttribute="bottom" constant="8" id="ib3-TN-5pT"/>
                                                         <constraint firstItem="glq-FQ-Msz" firstAttribute="top" secondItem="KIo-NK-Dv7" secondAttribute="top" constant="8" id="sbY-fd-jAF"/>
                                                     </constraints>
-                                                    <connections>
-                                                        <outletCollection property="gestureRecognizers" destination="zE8-hH-OYk" appends="YES" id="159-Cf-ook"/>
-                                                    </connections>
                                                 </view>
                                             </subviews>
+                                            <gestureRecognizers/>
                                             <constraints>
                                                 <constraint firstItem="KIo-NK-Dv7" firstAttribute="leading" secondItem="dLq-nH-hcF" secondAttribute="leading" constant="8" id="MBj-cE-Gr7"/>
                                                 <constraint firstItem="KIo-NK-Dv7" firstAttribute="top" secondItem="dLq-nH-hcF" secondAttribute="top" constant="8" id="OLc-ie-pZc"/>
@@ -339,6 +329,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <gestureRecognizers/>
                                         <connections>
                                             <outlet property="caption" destination="eLK-OB-vIv" id="QFb-XA-RbC"/>
                                             <outlet property="likeImg" destination="tcK-9j-MDk" id="GXW-Ln-Jwp"/>
@@ -375,11 +366,6 @@
                 <tapGestureRecognizer id="Vv8-Rx-IRs">
                     <connections>
                         <action selector="addImageTapped:" destination="9c5-vG-QXl" id="Suo-Kk-gOi"/>
-                    </connections>
-                </tapGestureRecognizer>
-                <tapGestureRecognizer id="zE8-hH-OYk">
-                    <connections>
-                        <action selector="tapOut:" destination="9c5-vG-QXl" id="RgR-UI-HSO"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>

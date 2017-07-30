@@ -30,6 +30,10 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let tapGestureRecognizer: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(FeedVC.dismissKeyboard))
+        tapGestureRecognizer.delegate = self as? UIGestureRecognizerDelegate
+        view.addGestureRecognizer(tapGestureRecognizer)
+        
         tableView.delegate = self
         tableView.dataSource = self
         self.captionField.delegate = self
@@ -97,6 +101,7 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
         
         
         if let cell = tableView.dequeueReusableCell(withIdentifier: "PostCell") as? PostCell {
+            
             
            //  var img: UIImage!
             
@@ -217,13 +222,20 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
         dismiss(animated: true, completion: nil)
     }
 
-    @IBAction func tapOut(_ sender: Any) {
-      
-//         self.view.endEditing(true)
-      
-       captionField.resignFirstResponder()
-        
-    }
     
+    
+//
+//    @IBAction func tapOut(_ sender: Any) {
+//
+////         self.view.endEditing(true)
+//
+//       captionField.resignFirstResponder()
+//
+//    }
+//
+    func dismissKeyboard() {
+        view.endEditing(true)
+    }
+
     
   }
