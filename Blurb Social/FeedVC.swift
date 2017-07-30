@@ -150,7 +150,7 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
             captionField.resignFirstResponder()
             return (true)
         }
-                
+        
         guard let caption = captionField.text, caption != "" else {
             print("NIKKA: Caption must be entered")
             let alert = UIAlertController(title: "Caption Required", message: "Say something funny!", preferredStyle: .alert)
@@ -160,6 +160,9 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
         }
         guard let img = imageAdd.image, imageSelected == true else {
             print("NIKKA: An image must be selected")
+            let alert = UIAlertController(title: "Image Required", message: "Please select a photo.", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+            present(alert, animated: true, completion:nil)
             return
         }
         if let imgData = UIImageJPEGRepresentation(img, 0.2) {
@@ -214,5 +217,13 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
         dismiss(animated: true, completion: nil)
     }
 
+    @IBAction func tapOut(_ sender: Any) {
+      
+//         self.view.endEditing(true)
+      
+       captionField.resignFirstResponder()
+        
+    }
+    
     
   }
