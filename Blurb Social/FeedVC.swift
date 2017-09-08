@@ -126,7 +126,7 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
        
     }
     
-    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
+    private func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
         if let image = info[UIImagePickerControllerEditedImage] as? UIImage {
                 imageAdd.image = image
                 imageSelected = true

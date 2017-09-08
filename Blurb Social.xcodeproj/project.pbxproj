@@ -197,7 +197,7 @@
 					63FFCD011EF8813E00F4B780 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = D8ZBA7RCZR;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -421,13 +421,18 @@
 			baseConfigurationReference = E00C2CAC303206F3F18C03F9 /* Pods-Blurb Social.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = D8ZBA7RCZR;
 				INFOPLIST_FILE = "Blurb Social/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Everipedia.Blurb-Social";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "f4d48069-4d43-4bf9-8311-3da32fcbb1a0";
+				PROVISIONING_PROFILE_SPECIFIER = "XC iOS: Everipedia.Blurb-Social";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -436,13 +441,18 @@
 			baseConfigurationReference = 1E2DA6F13C0DF022EEF85F68 /* Pods-Blurb Social.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = D8ZBA7RCZR;
 				INFOPLIST_FILE = "Blurb Social/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Everipedia.Blurb-Social";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "f4d48069-4d43-4bf9-8311-3da32fcbb1a0";
+				PROVISIONING_PROFILE_SPECIFIER = "XC iOS: Everipedia.Blurb-Social";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
